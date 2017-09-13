@@ -2,7 +2,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
+// declare model first to avoid schema not registered  error
+require('./models/User');
 require('./services/passport');
+
 
 mongoose.connect(keys.mongoURI);
 
