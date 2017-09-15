@@ -1,10 +1,13 @@
+import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
+
 import App from './components/App';
 import reducers from './reducers';
+
 
 // create new instance of redux store
 const store = createStore(reducers, {}, applyMiddleware());
