@@ -2,6 +2,8 @@ node_modules
 dev.js
 .build
 .vscode
+.env.development
+.env.production
 
 .DS_Store
 npm-debug.log
