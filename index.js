@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 // declare model first to avoid schema not registered  error
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 
@@ -30,6 +31,7 @@ app.use(passport.session());
 // require returns a function and we immediately call that function with app
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 
 // set up so express handles everything in production correctly
