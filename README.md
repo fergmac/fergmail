@@ -2,4 +2,4 @@
 
 #ferg-mail
 
-React Single Page App, built using Mongoose and MongoDB
+Fullstack web App, built using NodeJS, React, Redux, Express, Mongoose and MongoDB
